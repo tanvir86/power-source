@@ -2,8 +2,8 @@ package com.example.powersource.service;
 
 import com.example.powersource.model.PowerSource;
 import com.example.powersource.repository.PowerSourceRepository;
-import dto.PowerSourceDto;
-import dto.PowerSourceWithStatistics;
+import com.example.powersource.dto.PowerSourceDto;
+import com.example.powersource.dto.PowerSourceWithStatistics;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

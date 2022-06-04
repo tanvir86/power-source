@@ -1,4 +1,4 @@
-package dto;
+package com.example.powersource.dto;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;

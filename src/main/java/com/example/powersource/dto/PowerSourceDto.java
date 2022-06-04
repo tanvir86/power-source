@@ -1,4 +1,4 @@
-package dto;
+package com.example.powersource.dto;
 
 import com.example.powersource.model.PowerSource;
 import com.fasterxml.jackson.annotation.JsonIgnore;

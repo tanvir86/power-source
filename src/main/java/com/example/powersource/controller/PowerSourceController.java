@@ -2,8 +2,8 @@ package com.example.powersource.controller;
 
 import com.example.powersource.model.PowerSource;
 import com.example.powersource.service.PowerSourceService;
-import dto.PowerSourceDto;
-import dto.PowerSourceWithStatistics;
+import com.example.powersource.dto.PowerSourceDto;
+import com.example.powersource.dto.PowerSourceWithStatistics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
