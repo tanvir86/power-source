@@ -1,0 +1,14 @@
+logging:
+  level:
+    ROOT: DEBUG
+    com.example.powersource: DEBUG
+
+spring:
+  profiles:
+    active: dev
+  error:
+    include-message: always
+
+#springdoc:
+#  swagger-ui:
+#    path: /swagger-ui.html
