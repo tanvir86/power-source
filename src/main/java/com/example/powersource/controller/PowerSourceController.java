@@ -3,6 +3,7 @@ package com.example.powersource.controller;
 import com.example.powersource.model.PowerSource;
 import com.example.powersource.service.PowerSourceService;
 import dto.PowerSourceDto;
+import dto.PowerSourceWithStatistics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -47,5 +48,10 @@ public class PowerSourceController {
                 .defaultIfEmpty(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/get-by-postcode-range")
+    public Mono<PowerSourceWithStatistics> getPowerSourceByPostCodeRange(@RequestParam(name = "from") Integer fromPostCode,
+                                                                         @RequestParam(name = "to") Integer toPostCode) {
+        return powerSourceService.getPowerSourceStatisticsByPostCodeRange(fromPostCode, toPostCode);
+    }
 
 }
