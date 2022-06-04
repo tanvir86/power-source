@@ -1,7 +1,7 @@
 logging:
   level:
-    ROOT: DEBUG
-    com.example.powersource: DEBUG
+    ROOT: INFO
+    com.example.powersource: INFO
 
 spring:
   profiles:
